@@ -1,0 +1,21 @@
+- easy_install:
+    name: pip
+    state: latest
+
+- yum:
+    name: "docker"
+    state: present
+
+- pip:
+    name: docker-compose
+    state: present
+
+- name: Enable service docker, and not touch the running state
+  service:
+    name: docker
+    enabled: yes
+
+- name: Start service docker, if not running
+  service:
+    name: docker
+    state: started
