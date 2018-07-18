@@ -1,0 +1,10 @@
+galaxy_info:
+  author: usumangdevops
+  description: Install jenkins,docker,docker-compose  
+  min_ansible_version: 2.1.6
+  platforms:
+    - name: Centos
+    - name: redhat
+  galaxy_tags:
+    - jenkins, docker, docker-compose
+dependencies: []
